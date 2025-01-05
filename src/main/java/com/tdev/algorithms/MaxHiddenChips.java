@@ -5,6 +5,21 @@ import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * get Max hidden chips
+ *
+ * Problem Description:
+ * You are given:
+ * A list of chip heights (and widths, since they are squares), e.g., arr = [2, 4, 6, 14].
+ * An integer k, which represents the number of times you can hide chips below other chips.
+ * The goal is to find the maximum number of chips that can be hidden below other chips, following these rules:
+ * A chip of size h x h can hide at most one chip below it, and the hidden chip must have a size smaller than h x h (i.e., its height and width must be less than h).
+ * Chips cannot be hidden under chips that are already hiding another chip.
+ * Each chip can only be used once—either as the chip being hidden or as the chip hiding another chip.
+ * You can perform this operation up to k times.
+ *
+ * @author Tamer.Awad
+ */
 public class MaxHiddenChips {
 
     public static int getMaxHiddenChips(List<Integer> list1, int k) {
